@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr generator</title>
+    <link rel="stylesheet" href="qr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.3/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <h1>qr generator</h1>
+     <div class="back">
+        
+         <form action=""> 
+       <input type="text" id="nibbi99" placeholder="Enter content">
+       <br>
+       <input type="button" value="generator" onclick="xyz()">
+</form>
+<div id="qrcode"></div>
+<a id="downloadLink" href="#" download="qrcode.png">Download QR Code</a>
+     </div>
+     <script>
+        document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        xyz();
+    }
+});
+
+        function xyz() {
+    let text = document.getElementById("nibbi99").value;
+    let qrcodeElement = document.getElementById("qrcode");
+    qrcodeElement.innerHTML = ""; 
+    let qrcode = new QRCode(qrcodeElement, {
+        text: text,
+        width: 128,
+        height: 128
+    });
+    let downloadLink = document.getElementById("downloadLink");
+        let canvas = qrcodeElement.getElementsByTagName("canvas")[0];
+        downloadLink.href = canvas.toDataURL("image/png");
+}
+     </script>
+</body>
+</html>

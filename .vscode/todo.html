@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function addtask() {
+            var task_input = prompt('Enter task');
+            if (task_input) {
+                var div = document.createElement("div");
+                div.setAttribute('class', 'task');
+
+                var remove_button = document.createElement("button");
+                remove_button.setAttribute('class', 'remove');
+                remove_button.textContent = "X";
+                remove_button.style="font-weight: bold";
+                remove_button.onclick = function() {
+                    removetask(div);
+                };
+
+                var para = document.createElement("p");
+                para.setAttribute('id', 'tasks');
+                var ptext = document.createTextNode(task_input);
+                para.appendChild(ptext);
+    
+                
+    
+                var done_task = document.createElement("button");
+                done_task.setAttribute('class', 'done');
+                done_task.innerHTML = "&check;";
+                done_task.style="font-weight: bold";
+                done_task.onclick = function() {
+                    done_m(para,div);
+                };
+
+                div.appendChild(remove_button);
+                div.appendChild(para);
+                div.appendChild(done_task);
+    
+                var listDiv = document.getElementById("list");
+                listDiv.insertBefore(div, listDiv.firstChild);
+
+                document.getElementById("empty-message").style.display = "none";
+            }
+        }
+        function done_m(para,div){
+            para.style.textDecoration = "line-through";
+            var listDiv = document.getElementById("list");
+            listDiv.removeChild(div);
+            listDiv.appendChild(div);
+            div.classList.add('done_task');
+            if (listDiv.childElementCount > 0) {
+                document.getElementById("empty-message").style.display = "none";
+            }
+        }
+        function removetask(div) {
+            var listDiv = document.getElementById("list");
+            listDiv.removeChild(div);
+            if (listDiv.childElementCount === 0) {
+                document.getElementById("empty-message").style.display = "block";
+
+            }
+        }
+    
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'q' || event.key === 'Q')) {
+                addtask();
+            }
+        });
+    </script>
+    
+</head>
+<body>
+     
+    
+     
+    <h1 class="to">
+        to do .in 
+    </h1> 
+    <div class="behind-screen">
+         
+    </div>
+    <div class="list" id="list"></div>
+   
+    <div id="empty-message">Click <b>"Ctrl+Q"</b> or <b>"+"</b> to add a task</div>
+    <!-- <h1 id="hin">#आरम्भ</h1>  -->
+    <div id="add">
+        
+        <button onclick="addtask()" class="add">+</buttton> 
+         </div>
+</body>
+</html>

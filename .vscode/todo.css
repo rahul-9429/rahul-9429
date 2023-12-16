@@ -1,0 +1,126 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+ 
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.to  {
+    text-align: center;
+    text-transform: capitalize;
+    color:aliceblue;
+}
+.list{
+  /* filter: blur(2px); */
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+     
+}
+.task{ 
+  background-color: black;
+  text-transform: capitalize;
+  justify-content: space-around;
+   display: inline-flex;
+    margin: 10px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: auto;
+    width: 96%;
+     color: aliceblue;
+     text-align: center;
+     font-size: large;
+}
+#tasks{
+  font-size: large;
+}
+.remove{
+  display: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+.task:hover {
+  border: 1px solid  skyblue;
+   transition: all 1s ease 0s;
+}
+.done {
+  display: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+.task:hover .done {
+  display: block;
+  /* transition: all 1.5s ease 0s; */
+  animation-name: rem_do;
+  animation-duration: 2s;
+}
+.task:hover .remove {
+  display: block;  
+  /* transition: all 1.5s ease 0s; */
+  animation-name: rem_do;
+  animation-duration: 2s;
+}
+.behind-screen{
+  /* z-index: -5; */
+  filter: blur(5px);
+  background-color: azure;
+  top:45%;
+  right:45%;
+  /* display:flex; */
+}
+.add{
+  border: none;
+  z-index: 5;
+  height:50px;
+  width: 50px;
+  /* padding: 10px; */
+  font-size: 7vb;
+  font-weight: bolder;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 50%; 
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+#add , .add{
+  /* z-index: 5; */
+  display: flex;
+  /* height: 7vh;
+  width: 7vh; */
+  position: fixed;
+  bottom: 7vh;
+  right: 7vh;
+  cursor: pointer;
+}
+.add:hover{
+  box-shadow: 0px 0px 20px white;
+  transition: 1s ease-in-out;
+}
+
+#empty-message {
+  /* display: none; */
+  text-align: center;
+  text-transform: capitalize;
+}
+@keyframes rem_do {
+  0%   {opacity: 0%;}
+  25%  {opacity: 50%;}
+  50%  {opacity: 75%;}
+  100% {opacity: 100%;}
+}
+
+ 

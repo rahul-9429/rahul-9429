@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+
+    label{
+      text-align: left;
+    }
+    h1{
+        font-family:'Rubik Broken Fax',sans-serif;
+        font-weight: lighter;
+        font-size: 40px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+        .box{
+            border-radius:25px ;
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 60%;
+          width: 35%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        input[type="text"] , input[type="password"]{
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      outline: none;  
+      background: none;
+    }
+    
+    .glogin{
+         background-color: rgb(204, 240, 255);
+         padding:5px;
+         padding-left: 20px;
+         padding-right: 20px;
+         border: 1px solid black;
+    }
+     button{
+      background-color: none;
+     }
+     body{
+        user-select: none;
+      
+      background: rgb(238,174,202);
+background: -moz-linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(112,250,235,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(112,250,235,1) 100%);
+background: linear-gradient(45deg, rgba(238,174,202,1) 0%, rgba(112,250,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#70faeb",GradientType=1);
+    
+
+     }
