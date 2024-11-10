@@ -1,4 +1,4 @@
-##👋 Hi, I’m @rahul-9429
+#👋 Hi, I’m @rahul-9429
 - 👀 I’m interested in developing
 - 🌱 I’m currently learning python & MERN
 - 💞️ I’m looking to collaborate on python and web projects 
