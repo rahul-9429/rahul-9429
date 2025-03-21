@@ -5,8 +5,9 @@
    <img src="https://komarev.com/ghpvc/?username=rahul-9429&label=+PROFILE+VIEWS+&color=grey" />
 </a>
 </div>
-<div align="center ">
-  ### Creating stuff that's irresistible.💖
+
+<div align="center">
+  <h1>Creating stuff that's irresistible.💖</h1>
 </div>
 
 ### 👋 Hi there! I'm Rahul
