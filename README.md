@@ -5,7 +5,10 @@
    <img src="https://komarev.com/ghpvc/?username=rahul-9429&label=+PROFILE+VIEWS+&color=grey" />
 </a>
 </div>
+<div align="center ">
 ### Creating stuff that's irresistible.💖
+</div>
+
 ### 👋 Hi there! I'm Rahul
 - 🌱 I’m currently learning ML & MERN
 - 💞️ I’m looking to collaborate on python and web projects
