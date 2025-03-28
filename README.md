@@ -1,6 +1,5 @@
 
 <div align="right">
-
  <a href="http://www.github.com/rahul-9429" align="right">
    <img src="https://komarev.com/ghpvc/?username=rahul-9429&label=+PROFILE+VIEWS+&color=grey" />
 </a>
