@@ -10,9 +10,9 @@
 </div>
 
 ### 👋 Hi there! I'm Rahul
-- 🌱 I’m currently learning ML & MERN
+- 🌱 I’m currently learning ML & aws
 - 💞️ I’m looking to collaborate on python and web projects
-- 💬 Ask me about ReactJs And NodeJs and yeah frontend and backend dev
+- 💬 Ask me about mern
 - 📫 How to reach me rahulkasimikota@gmail.com
 
 ### 📊 GitHub Stats:
